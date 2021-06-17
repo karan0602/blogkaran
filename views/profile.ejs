@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <title>Document</title>
+   
+    <link rel="stylesheet" href="css/profile.css">
+</head>
+<body>
+    <header>
+        <div class="avtar">
+            <span>
+                <%= first %> 
+            </span>
+        </div>
+        <div class="avtarDetail">
+            <div class="nameEmail">
+                <div class="name">
+                    <span>Name : </span>
+                    <span> <%= name %>  </span>
+                </div>
+                <div class="email">
+                    <span>Email : </span>
+                    <span> <%= email %>  </span>
+                </div>
+            </div>
+            <div class="orgBlog">
+                <div class="name">
+                    <span>Organisation : </span>
+                    <span> <%= organisation %>  </span>
+                </div>
+                <div class="email">
+                    <span>No of Posted Blog : </span>
+                    <span> <%= count %>  </span>
+                </div>
+            </div>
+            
+        </div>
+        <div class="">
+            <button>
+                <a href="#abcde">See Your Blog</a>
+            </button>
+        </div>
+    </header>
+    
+    
+    <div class="container" id="abcde">
+        <p class="yourBlog">Your Blogs</p>
+        <div class="individualBlog">
+            <%    for (var i=0;i<list.length ;i++)  {%>
+                <div class="post">
+                    <div class="head">
+                         <%= list[i].title %> 
+                    </div>
+                    <div class="detail">
+                       <%= list[i].about %> 
+                    </div>
+                </div>
+            <%    } %>
+        </div>
+    </div>
+</body>
+</html>

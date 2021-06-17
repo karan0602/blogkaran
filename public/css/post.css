@@ -1,0 +1,48 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: content-box;
+}
+body
+{
+    height: 100vh;
+}
+
+form 
+{
+    width:60%;
+    margin:0 auto;
+}
+form .field 
+{
+    margin-top:10px;
+    width:100%;
+    font-size:1.2rem;
+}
+.field input 
+{
+    width:70%;
+    height: 25px;
+    padding-left: 10px;
+    font-size:15px;
+    font-weight:bold;
+}
+.btn 
+{
+    margin-top:10px;
+    width:80px;
+    height: 25px;
+}
+
+#error 
+{
+    color:red;
+    font-size:15px;
+    font-weight:bold;
+}
+h2 
+{
+    color:white;
+    text-align: center;
+    font-size: 30px;
+}

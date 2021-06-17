@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="css/signup.css">
+</head>
+<body>
+    <form action="/signup" method="POST" id="form">
+        <div class="field">
+            <label for="name">Name</label>
+            <input type="text" name="name" id="name"  required>
+        </div>
+        <div class="field">
+            <label for="email">Email</label>
+            <input type="email" name="email" id="org" required>
+        </div>
+        <div class="field">
+            <label for="org">Organisation</label>
+            <input type="text" name="org" id="org" required>
+        </div>
+        <div class="field">
+            <label for="pass">Password</label>
+            <input type="password" name="pass" id="pass" value="" required>
+        </div>
+        <div id="error"></div>
+        <div class="field">
+            <label for="pass">Confirm Password</label>
+            <input type="password" name="cpass" id="cpass" value="" required>
+        </div>
+        <input type="submit" value="Submit" class="btn">
+    </form>
+    
+    <script src="js/signup.js"></script>
+</body>
+</html>

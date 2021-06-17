@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="css/home.css">
+</head>
+<body>
+    <div class="navbar">
+        <span>PostYrBlog</span>
+        <span><a href="/show">Show Me</a></span>
+        <span><a href="/post">Post your Blog</a></span>
+        <span><a href="/profile"> <%= name %>  </a></span>
+        <span><a href="/logout">*Logout</a></span>
+    </div>
+
+    <div class="posts">
+        
+
+        <%    for (var i=upost.length-1;i>=0 ;i--){ %>
+            <div class="post">
+                <div class="author">
+                    <span>Posted By: <%= upost[i].email %>   </span>
+                    <span>Posted On:  <%=upost[i].date %>  </span>
+                </div>
+                <div class="postHeading">
+                    <%= upost[i].heading %> 
+                </div>
+                <div class="postDetail">
+                    <%= upost[i].details %>
+                </div>
+                <div class="buttons">
+                    <a href="articles/<%= upost[i].heading %>"><button style="width:100px;height:30px;padding:4px;border:1px solid green; background-color:green;color:white;font-size:18px;font-weight:bold;">Read more</button></a>
+                </div>
+            </div>
+    <%    } %>
+
+        <div class="post">
+            <div class="postHeading">
+                How to Became a Blogger ?
+            </div>
+            <div class="postDetail">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet ut in pariatur eligendi, ea qui nemo neque minima autem odio exercitationem natus deleniti facere mollitia repellat voluptate sint iste est cumque doloribus ipsam hic voluptatum.
+            </div>
+        </div>
+        <div class="post">
+            <div class="postHeading">
+                How to Became a Blogger ?
+            </div>
+            <div class="postDetail">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet ut in pariatur eligendi, ea qui nemo neque minima autem odio exercitationem natus deleniti facere mollitia repellat voluptate sint iste est cumque doloribus ipsam hic voluptatum.
+            </div>
+        </div>
+
+
+    </div>
+</body>
+</html>
